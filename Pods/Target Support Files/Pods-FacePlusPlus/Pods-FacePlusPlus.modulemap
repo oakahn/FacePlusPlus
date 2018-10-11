@@ -1,0 +1,6 @@
+framework module Pods_FacePlusPlus {
+  umbrella header "Pods-FacePlusPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}

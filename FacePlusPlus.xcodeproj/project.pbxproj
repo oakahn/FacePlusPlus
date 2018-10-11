@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65BCDB5AD40EE1BD7B9EE40B /* Pods_FacePlusPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6C625933254C1F941AC8D5 /* Pods_FacePlusPlus.framework */; };
 		9C987F12216F452D003A51F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C987F11216F452D003A51F8 /* AppDelegate.swift */; };
 		9C987F14216F452D003A51F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C987F13216F452D003A51F8 /* ViewController.swift */; };
 		9C987F17216F452D003A51F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C987F15216F452D003A51F8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11E263546CDB0FC14B69D944 /* Pods-FacePlusPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePlusPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacePlusPlus/Pods-FacePlusPlus.release.xcconfig"; sourceTree = "<group>"; };
 		9C987F0E216F452D003A51F8 /* FacePlusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePlusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C987F11216F452D003A51F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C987F13216F452D003A51F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9C987F18216F452E003A51F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C987F1B216F452E003A51F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C987F1D216F452E003A51F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6C625933254C1F941AC8D5 /* Pods_FacePlusPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacePlusPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB36E26DB8389C6FA5683CA /* Pods-FacePlusPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePlusPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacePlusPlus/Pods-FacePlusPlus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BCDB5AD40EE1BD7B9EE40B /* Pods_FacePlusPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF6B07D25C0D25BDA1E488F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6C625933254C1F941AC8D5 /* Pods_FacePlusPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9956CE3F5126693AAC5C7DFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAB36E26DB8389C6FA5683CA /* Pods-FacePlusPlus.debug.xcconfig */,
+				11E263546CDB0FC14B69D944 /* Pods-FacePlusPlus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C987F05216F452C003A51F8 = {
 			isa = PBXGroup;
 			children = (
 				9C987F10216F452D003A51F8 /* FacePlusPlus */,
 				9C987F0F216F452D003A51F8 /* Products */,
+				9956CE3F5126693AAC5C7DFE /* Pods */,
+				5BF6B07D25C0D25BDA1E488F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C987F20216F452E003A51F8 /* Build configuration list for PBXNativeTarget "FacePlusPlus" */;
 			buildPhases = (
+				4A05CBB2EF9075691ADBF5EC /* [CP] Check Pods Manifest.lock */,
 				9C987F0A216F452D003A51F8 /* Sources */,
 				9C987F0B216F452D003A51F8 /* Frameworks */,
 				9C987F0C216F452D003A51F8 /* Resources */,
+				A1C6F1784457085E6323F4CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A05CBB2EF9075691ADBF5EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacePlusPlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C6F1784457085E6323F4CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FacePlusPlus/Pods-FacePlusPlus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacePlusPlus/Pods-FacePlusPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C987F0A216F452D003A51F8 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		9C987F21216F452E003A51F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB36E26DB8389C6FA5683CA /* Pods-FacePlusPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = FacePlusPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FacePlusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		9C987F22216F452E003A51F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E263546CDB0FC14B69D944 /* Pods-FacePlusPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = FacePlusPlus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FacePlusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
